@@ -24,11 +24,13 @@ class Block{
 
      static mineBlock(){ // weitere Blocks in der Chain
 
+        const timestamp = Date.now(); // Zeit im ms seit 01.01.1970 | UNIX
+        const lastHash = "h1";
+        const hash = "h2"
 
 
 
-
-        return new this("time","h1","h2","data");
+        return new this(timestamp,lastHash,hash,"ownData");
 
     }
 
